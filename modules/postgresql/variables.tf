@@ -363,3 +363,9 @@ variable "module_depends_on" {
   type        = list(any)
   default     = []
 }
+
+variable "prevent_destroy" {
+  description = "Prevent destroy instance resource"
+  type        = bool
+  default     = false
+}

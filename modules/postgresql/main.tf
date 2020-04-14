@@ -89,6 +89,7 @@ resource "google_sql_database_instance" "default" {
     ignore_changes = [
       settings[0].disk_size
     ]
+    prevent_destroy = var.prevent_destroy
   }
 
   timeouts {
